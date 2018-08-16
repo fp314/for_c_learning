@@ -1,0 +1,24 @@
+E:\c_c++_workspace\for_c_learning\chapter_one\squeeze.c:23:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ main(){
+ ^~~~
+E:\c_c++_workspace\for_c_learning\chapter_one\squeeze.c: In function 'main':
+E:\c_c++_workspace\for_c_learning\chapter_one\squeeze.c:27:16: warning: passing argument 1 of 'getline' from incompatible pointer type [-Wincompatible-pointer-types]
+  while(getline(s, MAX)){
+                ^
+In file included from E:\c_c++_workspace\for_c_learning\chapter_one\squeeze.c:1:0:
+d:\mingw\include\stdio.h:650:1: note: expected 'char ** restrict' but argument is of type 'char *'
+ getline (char ** __restrict__, size_t * __restrict__, FILE * __restrict__);
+ ^~~~~~~
+E:\c_c++_workspace\for_c_learning\chapter_one\squeeze.c:27:19: warning: passing argument 2 of 'getline' makes pointer from integer without a cast [-Wint-conversion]
+  while(getline(s, MAX)){
+                   ^~~
+In file included from E:\c_c++_workspace\for_c_learning\chapter_one\squeeze.c:1:0:
+d:\mingw\include\stdio.h:650:1: note: expected 'size_t * restrict {aka unsigned int * restrict}' but argument is of type 'int'
+ getline (char ** __restrict__, size_t * __restrict__, FILE * __restrict__);
+ ^~~~~~~
+E:\c_c++_workspace\for_c_learning\chapter_one\squeeze.c:27:8: error: too few arguments to function 'getline'
+  while(getline(s, MAX)){
+        ^~~~~~~
+In file included from E:\c_c++_workspace\for_c_learning\chapter_one\squeeze.c:1:0:
+d:\mingw\include\stdio.h:650:1: note: declared here
+ getline (char ** __restrict__, size_t * __restrict__, FILE * __restrict__);
